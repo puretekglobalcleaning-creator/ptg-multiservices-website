@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Client Results | PTG Multiservices</title>
+<meta name="description" content="Actual credit repair results from PTG Multiservices clients — real three-bureau score gains, pulled straight from their credit files. Houston, TX.">
+<meta property="og:title" content="Real Client Results | PTG Multiservices">
+<meta property="og:description" content="Actual three-bureau score gains from real PTG Multiservices clients. Not projections. Not averages.">
+<meta property="og:image" content="https://www.ptgmultiservices.com/results/cards/keyun-s.png">
+<meta property="og:url" content="https://www.ptgmultiservices.com/results/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#C9A227; --gold-light:#E8C878; --gold-pale:#F8E078; --gold-dark:#B08830;
+    --black:#0B0B0C; --black-soft:#17171A; --cream:#FFFDF7; --gray:#6B6B66; --line:#EAE7DD;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+       color:var(--black);background:#fff;line-height:1.6}
+  h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+  a{text-decoration:none;color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  section{padding:80px 0}
+  .eyebrow{color:var(--gold-dark);font-size:13px;letter-spacing:.1em;text-transform:uppercase;
+           font-weight:800;margin-bottom:14px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 30px;
+       border-radius:8px;font-weight:650;font-size:15px;cursor:pointer;border:none;
+       transition:transform .15s ease,opacity .15s ease}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-gold{background:linear-gradient(135deg,var(--gold-pale) 0%,var(--gold) 45%,var(--gold-dark) 100%);color:var(--black)}
+  .btn-outline{background:transparent;border:2px solid var(--gold-dark);color:var(--gold-pale)}
+  header{position:sticky;top:0;z-index:100;background:var(--black)}
+  header nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  .nav-logo{display:flex;align-items:center;gap:10px}
+  .nav-logo img{height:38px;width:auto}
+  .nav-logo span{color:#F3F1E9;font-family:'Playfair Display',serif;font-size:18px;letter-spacing:.02em}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-phone{color:var(--gold-light);font-weight:600;font-size:15px}
+  .nav-cta{padding:11px 22px;font-size:14px}
+  .hero{background:radial-gradient(ellipse at 50% 0%,#1a1a1c 0%,var(--black) 60%);
+        color:var(--cream);text-align:center;padding:82px 0 70px}
+  .hero .eyebrow{color:var(--gold)}
+  .hero h1{font-size:clamp(34px,5vw,52px);line-height:1.15;margin-bottom:16px}
+  .hero .sub{color:var(--gold-light);font-size:19px;font-style:italic;
+             font-family:'Playfair Display',serif;margin-bottom:18px}
+  .hero p{max-width:660px;margin:0 auto;color:#C8C7C0;font-size:16.5px}
+  .results-section{background:var(--black);padding-top:0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px}
+  .card{background:linear-gradient(160deg,#17171A,#0B0B0C);border:1.5px solid #2A2A26;
+        border-radius:14px;overflow:hidden}
+  .card img{width:100%;height:auto}
+  .card .cap{padding:16px 18px 20px;border-top:1px solid #2A2A26}
+  .card .cap h3{color:var(--gold-light);font-size:20px;margin-bottom:6px}
+  .card .cap p{color:#B4B3A8;font-size:14px}
+  .honesty{background:var(--cream)}
+  .honesty .section-head{text-align:center;max-width:720px;margin:0 auto 44px}
+  .honesty h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:12px}
+  .honesty .section-head p{color:var(--gray);font-size:16px}
+  .points{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+  .point{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}
+  .point h3{font-size:20px;margin-bottom:8px}
+  .point p{color:var(--gray);font-size:14.5px}
+  .point .num{font-family:'Playfair Display',serif;font-size:30px;color:var(--gold-dark);
+              display:block;margin-bottom:8px}
+  .cta{background:var(--black);color:var(--cream);text-align:center}
+  .cta h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:14px}
+  .cta p{color:#B4B3A8;max-width:600px;margin:0 auto 26px;font-size:16px}
+  .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .fine{color:#8A8880;font-size:12.5px;margin-top:22px;line-height:1.6;max-width:720px;
+        margin-left:auto;margin-right:auto}
+  footer{background:var(--black);color:#B4B3A8;padding:50px 0 30px;text-align:center;
+         border-top:1px solid #2A2A26}
+  footer img{height:54px;width:auto;margin:0 auto 14px}
+  footer .foot-name{color:#fff;font-family:'Playfair Display',serif;font-size:18px;margin-bottom:6px}
+  footer .foot-line{font-size:14px;margin-bottom:4px}
+  footer .foot-line a{color:var(--gold-light)}
+  footer .foot-copy{font-size:12.5px;color:#75736C;margin-top:16px}
+  @media(max-width:620px){ .nav-phone{display:none} section{padding:56px 0} }
+</style>
+</head>
+<body id="top">
+
+<header>
+  <nav class="wrap">
+    <a href="/" class="nav-logo">
+      <img src="assets/logo-transparent-cropped.png" alt="Puretek Global logo">
+      <span>PTG Multiservices</span>
+    </a>
+    <div class="nav-right">
+      <a href="tel:+18323801738" class="nav-phone">832-380-1738</a>
+      <a href="#start" class="btn btn-gold nav-cta">Free Consultation</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Actual Client Results</div>
+    <h1>Real files. Real numbers.<br>Nothing dressed up.</h1>
+    <div class="sub">Pulled straight from our clients' three-bureau credit reports.</div>
+    <p>These are not projections, not averages, and not testimonials we wrote on someone's behalf.
+       Each figure below is the total movement on that client's file since we started working it.</p>
+  </div>
+</section>
+
+<section class="results-section">
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <img src="cards/keyun-s.png" alt="Keyun S. results: +94 Equifax, +71 Experian, +89 TransUnion">
+        <div class="cap"><h3>Keyun S.</h3>
+          <p>Every bureau started in the 500s. All three are out of them now.</p></div>
+      </div>
+      <div class="card">
+        <img src="cards/djharyvis-w.png" alt="Djharyvis W. results: +72 Equifax, +107 Experian, +95 TransUnion">
+        <div class="cap"><h3>Djharyvis W.</h3>
+          <p>600s to 700s across the board, with three collection accounts removed this
+             cycle alone — one of them reporting $15,339.</p></div>
+      </div>
+      <div class="card">
+        <img src="cards/marco-s.png" alt="Marco S. results: +36 Equifax, +91 Experian, +26 TransUnion">
+        <div class="cap"><h3>Marco S.</h3>
+          <p>+91 on Experian — the largest single-bureau move on this page.</p></div>
+      </div>
+      <div class="card">
+        <img src="cards/annemarie-w.png" alt="Annemarie W. results: +33 Equifax, +75 Experian, +34 TransUnion">
+        <div class="cap"><h3>Annemarie W.</h3>
+          <p>Experian started nearly 50 points behind her other two bureaus. Today all
+             three sit together in the 660s.</p></div>
+      </div>
+      <div class="card">
+        <img src="cards/juan-p.png" alt="Juan P. results: +18 Equifax, +47 Experian, +19 TransUnion">
+        <div class="cap"><h3>Juan P.</h3>
+          <p>No deletions on this file — the gains came from strategy, not disputes.
+             Sometimes that is the honest answer.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="honesty">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How to read these</div>
+      <h2>What most credit companies won't tell you</h2>
+      <p>If you have been burned before, you have probably been shown numbers that
+         quietly left something out. Here is what is behind ours.</p>
+    </div>
+    <div class="points">
+      <div class="point">
+        <span class="num">01</span>
+        <h3>Progress is not monthly</h3>
+        <p>Keyun's file showed zero movement on all three bureaus one month this summer.
+           Judged on that month alone you would think nothing was happening. His total is
+           +94, +71 and +89. Credit work shows up over the arc of a file, not in any
+           single 30-day window.</p>
+      </div>
+      <div class="point">
+        <span class="num">02</span>
+        <h3>Not every client is on this page</h3>
+        <p>Some of our clients' scores went down this cycle — usually because a new
+           collection landed or a positive account fell off. We tell those clients the
+           truth in writing, and we do not put their file on a marketing page.</p>
+      </div>
+      <div class="point">
+        <span class="num">03</span>
+        <h3>A deletion is not always a win</h3>
+        <p>When a <em>positive</em> account drops off a report, the count of "items removed"
+           goes up and the client's score goes down. We itemize what actually came off —
+           creditor, amount and bureau — instead of quoting you a number.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="start">
+  <div class="wrap">
+    <div class="eyebrow" style="color:var(--gold)">Start Here</div>
+    <h2>Find out what is actually on your report</h2>
+    <p>Free three-bureau credit snapshot — no card required. Send us what comes back and
+       we will tell you straight what we are working with, and whether we can help.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="https://app.myfreescorenow.com/credit-snapshot/25864">See My Free Credit Report</a>
+      <a class="btn btn-outline" href="tel:+18323801738">Call or Text 832-380-1738</a>
+    </div>
+    <p class="fine">
+      Client names are shown as first name and last initial with permission. Scores are
+      VantageScore 3.0 as reported by our monitoring agency. Results vary from file to file
+      and depend on what is actually being reported — no company can lawfully promise a
+      specific score increase, and we do not.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/logo-transparent-cropped.png" alt="Puretek Global logo">
+    <div class="foot-name">Puretek Global LLC — PTG Multiservices</div>
+    <div class="foot-line"><a href="tel:+18323801738">832-380-1738</a> &nbsp;·&nbsp; <a href="https://www.ptgmultiservices.com">www.ptgmultiservices.com</a></div>
+    <div class="foot-line">Houston, TX — proud to serve our community</div>
+    <div class="foot-copy">&copy; 2026 Puretek Global LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
