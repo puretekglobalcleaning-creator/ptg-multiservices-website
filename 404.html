@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSLHGRCTN5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DSLHGRCTN5');
+  // Lead-intent click tracking: calls, texts, report enrollment, consultation booking
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var h = a.getAttribute('href') || '', label = (a.textContent || '').trim().slice(0, 60);
+    var ev = null, lead = false;
+    if (h.indexOf('tel:') === 0) { ev = 'phone_click'; lead = true; }
+    else if (h.indexOf('sms:') === 0) { ev = 'text_click'; lead = true; }
+    else if (h.indexOf('meeting.jsp') > -1) { ev = 'book_consult_click'; lead = true; }
+    else if (h.indexOf('myfreescorenow.com/enroll') > -1) { ev = 'report_enroll_click'; lead = true; }
+    else if (h.indexOf('myfreescorenow.com/credit-snapshot') > -1) { ev = 'free_snapshot_click'; }
+    if (!ev) return;
+    gtag('event', ev, { link_text: label, link_url: h, page_path: location.pathname });
+    if (lead) gtag('event', 'generate_lead', { method: ev, page_path: location.pathname });
+  }, true);
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Page Not Found | PTG Multiservices</title>
